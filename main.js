@@ -52,4 +52,4 @@ setInterval(() => {
     return;
   }
   move(++position);
-}, 8000);
+}, 12000);

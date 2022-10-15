@@ -67,7 +67,7 @@
 /* DESCRIPTION */
 
 .description {
-  padding: 1.5rem 0;
+  padding: 1.5rem 10px;
   background-color: var(--grey);
   margin-bottom: 4rem;
 }
