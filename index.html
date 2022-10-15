@@ -142,29 +142,31 @@
         </article>
       </section>
       <section>
-        <form class="contact">
-          <div class="contact-text">
-            <div class="contact-text-title">Contacta'ns!</div>
-            <div class="contact-text-text">
-              El pas més difícil ja l'has fet, deixa que t'ajudem.
+        <form>
+          <div class="contact">
+            <div class="contact-text">
+              <div class="contact-text-title">Contacta'ns!</div>
+              <div class="contact-text-text">
+                El pas més difícil ja l'has fet, deixa que t'ajudem.
+              </div>
             </div>
-            <div class="contact-form__submit-container">
-              <button class="contact-form__submit" type="submit">Enviar</button>
+            <div class="contact-form">
+              <div class="contact-form__input">
+                <label for="name">El teu nom</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="contact-form__input">
+                <label for="email">El teu correu electrònic</label>
+                <input id="email" type="email" />
+              </div>
+              <div class="contact-form__input">
+                <label for="text">Explica'ns una mica</label>
+                <textarea name="text" id="text"></textarea>
+              </div>
             </div>
           </div>
-          <div class="contact-form">
-            <div class="contact-form__input">
-              <label for="name">El teu nom</label>
-              <input type="text" id="name" />
-            </div>
-            <div class="contact-form__input">
-              <label for="email">El teu correu electrònic</label>
-              <input id="email" type="email" />
-            </div>
-            <div class="contact-form__input">
-              <label for="text">Explica'ns una mica</label>
-              <textarea name="text" id="text"></textarea>
-            </div>
+          <div class="contact-form__submit-container">
+            <button class="contact-form__submit" type="submit">Enviar</button>
           </div>
         </form>
       </section>
