@@ -108,12 +108,12 @@
 }
 
 .team-member__image {
-  width: 300px;
+  width: 275px;
 }
 
 .team-member__card {
   padding: 1rem;
-  width: 400px;
+  width: 350px;
   background-color: var(--grey);
   border-radius: 0.5rem;
   height: 180px;
@@ -264,8 +264,8 @@
 .contact-text,
 .contact-form {
   flex: 1;
-  padding:0 1rem;
-  min-width: 450px;
+  padding: 0 1rem;
+  min-width: 350px;
 }
 
 .contact-text-title {
@@ -352,7 +352,7 @@
 }
 
 .footer-instagram {
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
 }
 
 .footer-email {
