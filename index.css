@@ -13,11 +13,18 @@
   font-family: "Poppins", sans-serif;
 }
 
+section {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .banner {
   background-image: url("/img/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  max-width: 100%;
 }
 
 .banner-background-color {
@@ -67,6 +74,7 @@
 /* DESCRIPTION */
 
 .description {
+  max-width: 100%;
   padding: 1.5rem 10px;
   background-color: var(--grey);
   margin-bottom: 4rem;
@@ -163,7 +171,7 @@
 }
 
 .opinion {
-  min-width: 100vw;
+  min-width: 100%;
   padding: 4rem 0;
   transition: transform 2s ease;
 }
@@ -242,12 +250,61 @@
   top: 0;
 }
 
+.arrow--left,
+.arrow--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow--left::after,
+.arrow--right::after {
+  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  box-shadow: var(--shadow-light);
+  backdrop-filter: blur(5px);
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0.2rem;
+  border: 1px solid transparent;
+  transition: 1s;
+  color: var(--secondary);
+}
+
+.arrow--left:hover::after {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.25s;
+  color: var(--black);
+}
+.arrow--right:hover::after {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.25s;
+  color: var(--black);
+}
+
 .arrow--left {
   left: 0;
 }
-
 .arrow--right {
   right: 0;
+}
+
+.arrow--left::after {
+  content: "\2190";
+}
+
+.arrow--right::after {
+  content: "\2192";
 }
 
 /* CONTACT */
@@ -349,13 +406,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
+}
+
+.footer-instagram,
+.footer-email {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .footer-instagram {
-  padding: 1rem 1rem 1rem 0;
-}
-
-.footer-email {
-  text-decoration: none;
-  color: var(--white);
+  display: inline-block;
+  border-right: 1px solid var(--primary);
 }

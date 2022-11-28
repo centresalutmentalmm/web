@@ -13,12 +13,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="normalicze.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <meta
       name="description"
       content="Centre de psicologia i salut mental a Tortosa"
     />
-    <script async defer src="main.js"></script>
+    <script async defer src="carroucel.js"></script>
     <title>Centre Salut Metal MM</title>
   </head>
   <body>
@@ -144,7 +144,7 @@
         </article>
       </section>
       <section>
-        <form data-netlify="true">
+        <form name="contact" data-netlify="true" action="/success">
           <div class="contact">
             <div class="contact-text">
               <div class="contact-text-title">Contacta'ns!</div>
@@ -155,15 +155,15 @@
             <div class="contact-form">
               <div class="contact-form__input">
                 <label for="name">El teu nom</label>
-                <input type="text" id="name" />
+                <input name="name" type="text" id="name" required />
               </div>
               <div class="contact-form__input">
                 <label for="email">El teu correu electrònic</label>
-                <input id="email" type="email" />
+                <input name="email" id="email" type="email" required />
               </div>
               <div class="contact-form__input">
                 <label for="text">Explica'ns una mica</label>
-                <textarea name="text" id="text"></textarea>
+                <textarea name="text" id="text" required></textarea>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@
           class="footer-instagram"
           href="https://www.instagram.com/centresalutmental_mm/"
         >
-          <img src="/img/instagram.svg" alt="inatagram logo" />
+          Instagram
         </a>
         <a class="footer-email" href="mailto:marianmonteverde.csm@gmail.com">
           marianmonteverde.csm@gmail.com
