@@ -244,7 +244,6 @@ section {
 
 .arrow {
   position: absolute;
-  /* background-color: red; */
   width: 10%;
   bottom: 0;
   top: 0;
@@ -260,6 +259,7 @@ section {
 
 .arrow--left::after,
 .arrow--right::after {
+  --arrow-size: 1.7rem;
   display: block;
   display: flex;
   justify-content: center;
@@ -271,8 +271,10 @@ section {
   border-radius: 100%;
   box-shadow: var(--shadow-light);
   backdrop-filter: blur(5px);
-  width: 2.6rem;
-  height: 2.6rem;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  min-width: var(--arrow-size);
+  min-height: var(--arrow-size);
   margin: 0.2rem;
   border: 1px solid transparent;
   transition: 1s;
@@ -404,6 +406,7 @@ section {
   width: 100%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px 0;
@@ -414,9 +417,4 @@ section {
   padding: 10px;
   text-decoration: none;
   color: var(--white);
-}
-
-.footer-instagram {
-  display: inline-block;
-  border-right: 1px solid var(--primary);
 }
